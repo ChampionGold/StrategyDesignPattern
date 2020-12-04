@@ -18,6 +18,7 @@ namespace StrategyPattern
             SetSalexTaxStrategy(ref usaOrder);
             ProcessOrder(usaOrder);
 
+
         }
 
         public static void ProcessOrder(Order order)
@@ -90,7 +91,8 @@ namespace StrategyPattern
             order.Items = new List<Item>();
             order.Items.Add(new Item { Name = "Doritos Pizzerolla", Price = 0.75m });
             order.Items.Add(new Item { Name = "A can of Bud Light Beer", Price = 1.50m });
-            
+            order.Items.Add(new Item { Name = "A package of cigars", Price = 2.50m });
+
             return order;
         }
 
