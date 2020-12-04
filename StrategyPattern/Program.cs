@@ -12,6 +12,11 @@ namespace StrategyPattern
             Order mexicoOrder = MexicoTest();
             SetSalexTaxStrategy(ref mexicoOrder);
             ProcessOrder(mexicoOrder);
+            
+            //Change 4/Dec/20 Testing usa taxes
+            Order usaOrder = USATest();
+            SetSalexTaxStrategy(ref usaOrder);
+            ProcessOrder(usaOrder);
 
         }
 
